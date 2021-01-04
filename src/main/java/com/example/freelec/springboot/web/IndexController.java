@@ -7,11 +7,13 @@ import com.example.freelec.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import javax.servlet.http.HttpSession;
 
+@CrossOrigin(origins = "http://localhost:8080")
 @RequiredArgsConstructor
 @Controller
 public class IndexController {
